@@ -1,0 +1,139 @@
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+/* header */
+header{
+  position: fixed;
+  padding: 20px 78px 34px 78px;
+  z-index: 2;
+  width: 100%;
+  background: linear-gradient(to bottom,rgb(13, 13, 14)0%,rgba(0, 0, 0, 0)25%);
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+
+header .logo img{
+  width :60px;
+
+}
+
+.navbar ul{
+  display: flex;
+}
+
+.navbar a{
+  color: white;
+  font-weight: 22px;
+  font-weight: 400;
+  padding: 5px 26px;
+}
+
+.navbar li:last-child a{
+  padding-right: 0;
+}
+.navbar a:hover{
+  color: rgb(0, 174, 255);
+}
+
+.navbar li a {
+  transition: color ease 0.8s;
+}
+.navbar li a:active{
+  color: red;
+} 
+.navbar li.active a{
+  border-bottom: 2px solid #f70142;
+}
+
+/* hero */
+.hero{
+position: relative;
+height: 100vh; 
+
+
+}
+
+.hero img{
+  width: 100%;
+  height: 100%;
+}
+.hero .hero-info{
+  position: absolute;
+  top:50%;
+  margin-left: 78px;
+  transform: translateY(-50%);
+  max-width: 450px;
+  line-height: 60px;
+}
+.hero-info h1{
+  color: wheat;
+  font-size: 74px;
+  font-weight: 900;
+  color: deepskyblue;
+  margin-bottom: 32px;
+ 
+  
+}
+span{
+  font-weight: 400;
+  font-size: 38px;
+  color: aliceblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: block;
+  }
+
+  .hero .hero-info .cta-button{
+    background-color: deepskyblue;
+    color: aliceblue;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 12px 20px ;
+    border-radius: 5px;
+    transition: background ease 0.5s;
+    
+  }
+  .hero .hero-info .cta-button:hover{
+    background-color: white;
+    color:deepskyblue;
+    border: 1px;
+    border-style: solid;
+
+  }
+  .hero .swiper-pagination{
+    bottom: 140px;
+    text-align: right;
+    padding-right: 70px;
+    
+  }
+  .hero .swiper-pagination .swiper-pagination-bullet {
+    border: 2px solid white;
+    width: 23px;
+    height: 23px;
+    background: transparent;
+    opacity: 1;
+    outline: none;
+  }
+  .hero .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    border: 2px solid #f70142;
+  }
+
